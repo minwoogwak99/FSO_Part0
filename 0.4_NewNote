@@ -1,0 +1,29 @@
+title Notes Diagram
+
+Browser->Server: Http GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server->Browser: HTML Code
+Browser->Server: Http GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->Browser: main.js
+
+Note over Browser: browser starts executing js-code that requests JSON data from server 
+
+Browser->Server: Http GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser: data.json
+
+Note over Browser: browser executes the event handler that renders notes to display
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over Server: Server saves the infromation given py POST Request.
+
+Browser->Server: Http GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server->Browser: HTML Code
+Browser->Server: Http GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->Browser: main.js
+
+Note over Browser: browser starts executing js-code that requests JSON data from server 
+
+Browser->Server: Http GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser: data.json
+
+Note over Browser: browser executes the event handler that renders notes to display
